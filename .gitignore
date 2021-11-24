@@ -4,13 +4,16 @@
 
 #index.html
 
+
 #Ignorar carpetas
 
-node_modules
+Web Prode/node_modules
+
 
 #Ignorar subcarpetas
 
 #nombrecarpeta/nosmbresubcarpeta
+
 
 #Ignorar todos los archivos de la misma extensión 
 
