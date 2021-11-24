@@ -1,0 +1,19 @@
+#Lista de archivos a ser ignorados en la subida a GitHub
+
+#Ignorar archivos (simplemente el nombre del/los archivo/s)
+
+#index.html
+
+#Ignorar carpetas
+
+node_modules
+
+#Ignorar subcarpetas
+
+#nombrecarpeta/nosmbresubcarpeta
+
+#Ignorar todos los archivos de la misma extensión 
+
+#.txt
+#.gif
+
