@@ -1,7 +1,6 @@
 #Lista de archivos a ser ignorados en la subida a GitHub
 
 #Ignorar archivos (simplemente el nombre del/los archivo/s)
-
 styles.css
 git-log_screenshot.png
 package-lock.json
@@ -17,6 +16,6 @@ package.json
 
 #Ignorar todos los archivos de la misma extensión 
 
-.rar
+*.rar
 #.gif
 
