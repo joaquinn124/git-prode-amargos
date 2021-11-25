@@ -3,6 +3,8 @@
 #Ignorar archivos (simplemente el nombre del/los archivo/s)
 
 git-log_screenshot
+package-lock.json
+package.json
 
 #Ignorar carpetas
 
