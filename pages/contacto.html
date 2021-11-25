@@ -90,7 +90,12 @@
 </main>
 
 <footer>
-  <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Reglamento</a>
+  <section class="d-flex justify-content-between">
+        <div class="d-flex align-items-start ps-3">
+          <a href="Index.html"><img src="./img/2021_logo_png.png" id="footer__logo" alt="logo prode amargos"></a>
+        </div>
+        <div class="d-flex align-items-end flex-column flex-nowrap pe-3 pb-2">
+          <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Reglamento</a>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <h5 id="offcanvasRightLabel">Reglamento del prode</h5>
@@ -101,19 +106,22 @@
               Texto con el reglamento del prode
             </div>
           </div>
-    <a class="linksFooter" href="#">Privacidad</a>
-    <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2" >FAQ</a>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">FAQ</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        Texto preguntas y respuestas más comunes
-      </div>
-    </div>
-    <p class="textoFooter">prode amargos</p>
+          <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2" >FAQ</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">FAQ</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              Texto preguntas y respuestas más comunes
+            </div>
+          </div>
+        </div> 
+      </section>
+      <section class="footer__fondo">
+        <p class="footer__texto">prode amargos</p>
+      </section>
 </footer>    
 
 <!--Scripts BS de JS-->
