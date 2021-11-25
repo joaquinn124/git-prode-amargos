@@ -2,7 +2,10 @@
 
 #Ignorar archivos (simplemente el nombre del/los archivo/s)
 
+styles.css
 git-log_screenshot
+package-lock.json
+package.json
 
 #Ignorar carpetas
 
