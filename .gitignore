@@ -3,6 +3,7 @@
 #Ignorar archivos (simplemente el nombre del/los archivo/s)
 styles.css
 git-log_screenshot.png
+git-log_screenshot-pull.png
 package-lock.json
 package.json
 
