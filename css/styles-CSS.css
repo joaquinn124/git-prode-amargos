@@ -2,13 +2,15 @@
 /*************************/
 /*   ESTILOS GENERALES   */
 /*************************/
+/*---Paleta de colores---*/
+/*---Fuentes---*/
 * {
   margin: 0;
   padding: 0; }
 
 #bodyProp {
   background-color: #E8EAF6;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-left: 50px;
   margin-right: 50px;
   height: 100vh; }
@@ -39,13 +41,12 @@ main {
 
 footer {
   height: 230px;
-  /*background-color: chartreuse;*/
   align-items: center;
   padding-top: 55px;
   text-align: center; }
 
 .footer__texto {
-  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-family: "Libre Barcode 39 Extended Text", cursive;
   font-size: 35px;
   text-align: center;
   color: #3F51B5;
@@ -61,6 +62,8 @@ footer {
 /***********************/
 /*   MENÚ NAVEGACIÓN   */
 /***********************/
+/*---Paleta de colores---*/
+/*---Fuentes---*/
 #logoHeader {
   width: 140px;
   height: 150px; }
@@ -112,6 +115,8 @@ section a {
 /*************************/
 /*   ESTILOS SECCIONES   */
 /*************************/
+/*---Paleta de colores---*/
+/*---Fuentes---*/
 .bloqueHome {
   padding: 10px 0px;
   display: flex;
@@ -121,7 +126,7 @@ section a {
   align-items: center; }
   .bloqueHome__titulo2 {
     color: #3F51B5;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 22px;
     padding-left: 0px; }
   .bloqueHome__img {
@@ -134,7 +139,7 @@ section a {
   .bloqueAP__titulo1 {
     /*estilo de h1 páginas ≠ incio*/
     color: #2196F3;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 25px;
     text-align: center;
     padding: 10px 0px; }
@@ -155,7 +160,7 @@ section a {
   .bloqueAP__titulo4 {
     /*estilo de h2 páginas ≠ incio*/
     color: #3F51B5;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 18px;
     padding-left: 0px; }
 
@@ -190,6 +195,8 @@ section a {
 /*****************************/
 /*   ESTILOS FORM CONTACTO   */
 /*****************************/
+/*---Paleta de colores---*/
+/*---Fuentes---*/
 #legendProp {
   font-size: 15px; }
 
@@ -220,6 +227,182 @@ textarea {
   display: flex;
   flex-flow: column wrap; }
 
+/*********************/
+/*   MEDIA QUERIES   */
+/*********************/
+/*---Paleta de colores---*/
+/*---Fuentes---*/
+/*---Tablet Grid---*/
+@media (min-width: 577px) and (max-width: 768px) {
+  ul li a {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 1px #3F51B5;
+    color: #3F51B5;
+    padding: 3px;
+    text-decoration: none; } }
+
+/*---Desktop Grid---*/
+@media (min-width: 769px) and (max-width: 1200px) {
+  ul li a {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 1px #3F51B5;
+    color: #3F51B5;
+    padding: 3px;
+    text-decoration: none; }
+  .bloqueHome {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueHome__titulo2 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      padding-left: 0px; }
+    .bloqueHome__img {
+      width: 375px;
+      height: 175px; }
+    .bloqueHome__articulo {
+      margin-left: 20px; }
+  .bloqueAP {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueAP__titulo1 {
+      color: #2196F3;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 35px;
+      text-align: center;
+      padding: 10px 0px; }
+    .bloqueAP__titulo2 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo3 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo4 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 27px;
+      padding-left: 0px; }
+  .textoTamañoMedio {
+    font-size: 17px; }
+  .sitioCons__img {
+    width: 650px;
+    height: 400px; }
+  .sitioCons__texto {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 19px;
+    border: solid red 1px;
+    padding-left: 0px; }
+  .bloquesInfoLiga {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+  .ajustarVideo {
+    width: 425px;
+    height: 375px; } }
+
+@media (min-width: 1201px) {
+  ul li a {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 1px #3F51B5;
+    color: #3F51B5;
+    margin: 20px;
+    padding: 3px;
+    text-decoration: none; }
+  .bloqueHome {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueHome__titulo2 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 32px;
+      padding-left: 0px; }
+    .bloqueHome__img {
+      width: 675px;
+      height: 400px; }
+    .bloqueHome__articulo {
+      margin-left: 20px; }
+  .bloqueAP {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueAP__titulo1 {
+      color: #2196F3;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 35px;
+      text-align: center;
+      padding: 10px 0px; }
+    .bloqueAP__titulo2 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo3 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo4 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 27px;
+      padding-left: 0px; }
+  .textoTamañoMedio {
+    font-size: 22px; }
+  .sitioCons__img {
+    width: 650px;
+    height: 400px; }
+  .sitioCons__texto {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 19px;
+    border: solid red 1px;
+    padding-left: 0px; }
+  .bloquesInfoLiga {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+  div iframe {
+    width: 650px;
+    height: 500px; } }
+
+/*---Paleta de colores---*/
+/*---Fuentes---*/
 /*********************/
 /*   ESTILOS TEXTO   */
 /*********************/
@@ -282,175 +465,3 @@ p span a:hover {
 header a img:hover {
   transform: scale(1.1, 1.1);
   transition: 400ms ease; }
-
-/*********************/
-/*   MEDIA QUERIES   */
-/*********************/
-/*---Tablet Grid---*/
-@media (min-width: 577px) and (max-width: 768px) {
-  ul li a {
-    width: 100px;
-    height: 55px;
-    border-radius: 5px 5px 5px 5px;
-    border: solid 1px #3F51B5;
-    color: #3F51B5;
-    padding: 3px;
-    text-decoration: none; } }
-
-/*---Desktop Grid---*/
-@media (min-width: 769px) and (max-width: 1200px) {
-  ul li a {
-    width: 100px;
-    height: 55px;
-    border-radius: 5px 5px 5px 5px;
-    border: solid 1px #3F51B5;
-    color: #3F51B5;
-    padding: 3px;
-    text-decoration: none; }
-  .bloqueHome {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-    .bloqueHome__titulo2 {
-      color: #3F51B5;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 22px;
-      padding-left: 0px; }
-    .bloqueHome__img {
-      width: 375px;
-      height: 175px; }
-    .bloqueHome__articulo {
-      margin-left: 20px; }
-  .bloqueAP {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-    .bloqueAP__titulo1 {
-      color: #2196F3;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 35px;
-      text-align: center;
-      padding: 10px 0px; }
-    .bloqueAP__titulo2 {
-      color: #C6FF00;
-      background-color: #424242;
-      height: 50px;
-      font-size: 25px;
-      padding-top: 10px;
-      padding-left: 5px; }
-    .bloqueAP__titulo3 {
-      color: #C6FF00;
-      background-color: #424242;
-      height: 50px;
-      font-size: 25px;
-      padding-top: 10px;
-      padding-left: 5px; }
-    .bloqueAP__titulo4 {
-      color: #3F51B5;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 27px;
-      padding-left: 0px; }
-  .textoTamañoMedio {
-    font-size: 17px; }
-  .sitioCons__img {
-    width: 650px;
-    height: 400px; }
-  .sitioCons__texto {
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 19px;
-    border: solid red 1px;
-    padding-left: 0px; }
-  .bloquesInfoLiga {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-  .ajustarVideo {
-    width: 425px;
-    height: 375px; } }
-
-@media (min-width: 1201px) {
-  ul li a {
-    width: 100px;
-    height: 55px;
-    border-radius: 5px 5px 5px 5px;
-    border: solid 1px #3F51B5;
-    color: #3F51B5;
-    margin: 20px;
-    padding: 3px;
-    text-decoration: none; }
-  .bloqueHome {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-    .bloqueHome__titulo2 {
-      color: #3F51B5;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 32px;
-      padding-left: 0px; }
-    .bloqueHome__img {
-      width: 675px;
-      height: 400px; }
-    .bloqueHome__articulo {
-      margin-left: 20px; }
-  .bloqueAP {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-    .bloqueAP__titulo1 {
-      color: #2196F3;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 35px;
-      text-align: center;
-      padding: 10px 0px; }
-    .bloqueAP__titulo2 {
-      color: #C6FF00;
-      background-color: #424242;
-      height: 50px;
-      font-size: 25px;
-      padding-top: 10px;
-      padding-left: 5px; }
-    .bloqueAP__titulo3 {
-      color: #C6FF00;
-      background-color: #424242;
-      height: 50px;
-      font-size: 25px;
-      padding-top: 10px;
-      padding-left: 5px; }
-    .bloqueAP__titulo4 {
-      color: #3F51B5;
-      font-family: 'Ubuntu',sans-serif;
-      font-size: 27px;
-      padding-left: 0px; }
-  .textoTamañoMedio {
-    font-size: 22px; }
-  .sitioCons__img {
-    width: 650px;
-    height: 400px; }
-  .sitioCons__texto {
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 19px;
-    border: solid red 1px;
-    padding-left: 0px; }
-  .bloquesInfoLiga {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; }
-  div iframe {
-    width: 650px;
-    height: 500px; } }

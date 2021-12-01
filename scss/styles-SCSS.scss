@@ -1,289 +1,64 @@
+// Importaciones
+
 /*************************/
 /*   ESTILOS GENERALES   */
 /*************************/
 
-// Mover luego a _estructura y realizar @import
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-#bodyProp {
-    background-color:#E8EAF6;
-    font-family: 'Montserrat',sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 100vh;
-}
-
-.indexHeader{
-    padding: 10px 0px;
-    background-color: #E8EAF6;
-    height: 150px;
-    text-align: center;
-}
-
-.altPagesHeader{
-    padding: 20px 0px;
-    background-color: #E8EAF6;
-    height: 150px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
-nav {
-    padding: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-main {
-    padding-top: 5px;
-}
-
-footer {
-    height: 230px;
-    /*background-color: chartreuse;*/
-    align-items: center;
-    padding-top: 55px;
-    text-align: center;
-}
-
-.footer__texto {
-    font-family: 'Libre Barcode 39 Extended Text', cursive;
-    font-size: 35px;
-    text-align: center;
-    color: #3F51B5;    
-    padding-top: 25px;
-}
-
-.footer__fondo {
-    background-image: radial-gradient(farthest-side, #C5CAE9, #E8EAF6);
-}
-
-#footer__logo {
-    width: 58px;
-    height: 65px;
-}
+@import "estructura-gral";
 
 /***********************/
 /*   MENÚ NAVEGACIÓN   */
 /***********************/
 
-#logoHeader {
-    width: 140px;
-    height: 150px;
-}
-
-li {
-    a {
-        text-decoration: none;
-        padding: 5px;
-    }
-}
-
-ul {
-    li {
-        a {
-            width: 100px;
-            height: 55px;
-            border-radius: 5px 5px 5px 5px;
-            border: solid 1px #3F51B5;
-            color: #3F51B5;
-            padding: 3px;
-            text-decoration: none;
-        }
-        a:hover {
-            background: #3F51B5;
-            color: #FFFFFF;
-        }
-    }
-}
-
-.formatoMenuNav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
-
-.menuEnBloques {
-    padding: 35px 0px 50px 0px;
-
-    &__formato {
-        width: 200px;
-        height: 80px;
-        padding: 5px;
-        margin: 25px;
-        text-decoration: none;
-        font-size: 19px;
-        font-weight: bold;
-        color: #3F51B5;
-        border: solid 1px #3F51B5;
-        border-radius: 5px 5px 5px 5px;
-    &:hover {
-        background: #3F51B5;
-        color: #FFFFFF;
-    }
-    }
-}
-
-section {
-    a {
-        text-decoration: none;
-    }
-}
+@import "menu-nav";
 
 /*************************/
 /*   ESTILOS SECCIONES   */ 
 /*************************/
 
-.bloqueHome {
-    padding: 10px 0px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-
-    &__titulo2 {
-        color: #3F51B5;
-        font-family: 'Ubuntu',sans-serif;
-        font-size: 22px;
-        padding-left: 0px;
-    }
-
-    &__img {
-        width: 300px;
-        height: 150px;
-    }
-}
-
-.bloqueAP { 
-    /*Ordena el inicio de páginas ≠ incio*/
-    margin-top: 25px;
-
-    &__titulo1 {
-        /*estilo de h1 páginas ≠ incio*/
-        color: #2196F3;
-        font-family: 'Ubuntu',sans-serif;
-        font-size: 25px;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
-    &__titulo2 {
-        color: #C6FF00;
-        background-color: #424242;
-        height: 55px;
-        font-size: 18px;
-        padding-top: 4px;
-        padding-left: 5px;
-    }
-
-    &__titulo3 {
-        color: #C6FF00;
-        background-color: #424242;
-        height: 48px;
-        font-size: 18px;
-        padding-top: 12px;
-        padding-left: 5px;
-    }
-
-    &__titulo4 {
-        /*estilo de h2 páginas ≠ incio*/
-        color: #3F51B5;
-        font-family: 'Ubuntu',sans-serif;
-        font-size: 18px;
-        padding-left: 0px;
-    }
-}
-
-.bloquesInfoLiga {
-    /*border: dashed #FF80AB 1px;*/
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin: 10px;
-
-    &__iframe {
-        display: flex;
-        flex-flow: column nowrap;
-        overflow: auto;
-        /*Diseño temporal hasta poder editar colores de un Iframe*/
-        background-image: linear-gradient(white,lightgrey);
-    }
-}
-
-.sitioCons__img {
-    width: 400px;
-    height: 200px;
-    padding-bottom: 15px;
-}
-
-.sitioCons__texto {
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 15px;
-    border: solid red 1px;
-    padding-left: 0px;
-}
+@import "secciones";
 
 /*****************************/
 /*   ESTILOS FORM CONTACTO   */ 
 /*****************************/
 
-#legendProp {
-    font-size: 15px;
-}
+@import "formularios";
 
-input {
-    width: 50%;
-    margin: 5px;
-}
+/*********************/
+/*   MEDIA QUERIES   */
+/*********************/
 
-label {
-    padding: 5px 5px;
-}
+@import "responsive";
 
-select {
-    width: 50%;
-    margin: 5px;
-}
 
-textarea {
-    width: 50%;
-    margin: 5px;
-}
+// Definición de variables
 
-.suscripcionText {
-    color: #C6FF00;
-    text-align: left;
-    width: 50%;
-}
+/*---Paleta de colores---*/
 
-.formContacto {
-    background-color: #424242;
-    color: #C6FF00;
-    padding: 5px;
-    display: flex;
-    flex-flow: column wrap;
-}
+$primaryColor: #3F51B5;
+$primaryBackground: #E8EAF6;
+$backgroundFooter1: #C5CAE9;
+$altBackground: #FFFFFF;
+$secondaryColor: #2196F3;
+$accentColor: #C6FF00;
+$accentBackground: #424242;
+$noticeColor: red;
+
+/*---Fuentes---*/
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Ubuntu',sans-serif;
+$footerFont: 'Libre Barcode 39 Extended Text', cursive;
+
+
+//Estilos varios
 
 /*********************/
 /*   ESTILOS TEXTO   */
 /*********************/
 
 p {
-    color: #3F51B5;
+    color: $primaryColor;
 }
 
 .textoTamañoMedio{
@@ -319,10 +94,10 @@ p {
 }
 
 .linksFooter {
-    color: #3F51B5;
+    color: $primaryColor;
 
     &:hover{
-        color: #3F51B5;
+        color: $primaryColor;
     }
 }
 
@@ -330,13 +105,13 @@ p {
     span {
         a {
             text-decoration: none;
-            color: #3F51B5;
+            color: $primaryColor;
         }
         a:hover {
             text-decoration: none;
             border-radius: 5px 5px 5px 5px;
-            background: #3F51B5;
-            color: #FFFFFF;
+            background: $primaryColor;
+            color: $altBackground;
         }
     }
 }
@@ -364,258 +139,6 @@ header {
         img:hover {
         transform: scale(1.1,1.1);
         transition: 400ms ease;
-        }
-    }
-}
-
-/*********************/
-/*   MEDIA QUERIES   */
-/*********************/
-
-/*---Tablet Grid---*/
-
-@media (min-width: 577px) and (max-width: 768px) {
-    ul {
-        li {
-            a {
-                width: 100px;
-                height: 55px;
-                border-radius: 5px 5px 5px 5px;
-                border: solid 1px #3F51B5;
-                color: #3F51B5;
-                padding: 3px;
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-/*---Desktop Grid---*/
-
-@media (min-width: 769px) and (max-width: 1200px) {
-    ul {
-        li {
-            a {
-                width: 100px;
-                height: 55px;
-                border-radius: 5px 5px 5px 5px;
-                border: solid 1px #3F51B5;
-                color: #3F51B5;
-                padding: 3px;
-                text-decoration: none;
-            }
-        }
-    }
-    
-    .bloqueHome {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-
-        &__titulo2 {
-            color: #3F51B5;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 22px;
-            padding-left: 0px;
-        }
-
-        &__img {
-            width: 375px;
-            height: 175px;
-        }
-
-        &__articulo {
-            margin-left: 20px;
-        }
-    }
-
-    .bloqueAP {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-
-        &__titulo1 {
-            color: #2196F3;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 35px;
-            text-align: center;
-            padding: 10px 0px;
-        }
-
-        &__titulo2 {
-            color: #C6FF00;
-            background-color: #424242;
-            height: 50px;
-            font-size: 25px;
-            padding-top: 10px;
-            padding-left: 5px;
-        }
-
-        &__titulo3 {
-            color: #C6FF00;
-            background-color: #424242;
-            height: 50px;
-            font-size: 25px;
-            padding-top: 10px;
-            padding-left: 5px;
-        }
-
-        &__titulo4 {
-            color: #3F51B5;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 27px;
-            padding-left: 0px;
-        }
-    }
-        
-    .textoTamañoMedio{
-        font-size: 17px;
-    }
-
-    .sitioCons__img {
-        width: 650px;
-        height: 400px;
-    }
-
-    .sitioCons__texto {
-        color: red;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 19px;
-        border: solid red 1px;
-        padding-left: 0px;
-    }
-
-    .bloquesInfoLiga {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-    }
-
-    .ajustarVideo {
-        width: 425px;
-        height: 375px;
-    }
-
-}
-
-@media (min-width: 1201px) {
-    ul {
-        li {
-            a {
-                width: 100px;
-                height: 55px;
-                border-radius: 5px 5px 5px 5px;
-                border: solid 1px #3F51B5;
-                color: #3F51B5;
-                margin: 20px;
-                padding: 3px;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .bloqueHome {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-
-        &__titulo2 {
-            color: #3F51B5;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 32px;
-            padding-left: 0px;
-        }
-
-        &__img {
-            width: 675px;
-            height: 400px;
-        }
-
-        &__articulo {
-            margin-left: 20px;
-        }
-    }
-    
-    .bloqueAP {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-
-        &__titulo1 {
-            color: #2196F3;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 35px;
-            text-align: center;
-            padding: 10px 0px;
-        }
-
-        &__titulo2 {
-            color: #C6FF00;
-            background-color: #424242;
-            height: 50px;
-            font-size: 25px;
-            padding-top: 10px;
-            padding-left: 5px;
-        }
-
-        &__titulo3 {
-            color: #C6FF00;
-            background-color: #424242;
-            height: 50px;
-            font-size: 25px;
-            padding-top: 10px;
-            padding-left: 5px;
-        }
-
-        &__titulo4 {
-            color: #3F51B5;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 27px;
-            padding-left: 0px;
-        }
-    }  
-    
-    .textoTamañoMedio{
-        font-size: 22px;
-    }
-
-    .sitioCons__img {
-        width: 650px;
-        height: 400px;
-    }
-
-    .sitioCons__texto {
-        color: red;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 19px;
-        border: solid red 1px;
-        padding-left: 0px;
-    }
-
-    .bloquesInfoLiga {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-    }
-
-    div {
-        iframe {
-            width: 650px;
-            height: 500px;
         }
     }
 }
