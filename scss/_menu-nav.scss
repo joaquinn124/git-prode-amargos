@@ -1,0 +1,85 @@
+// Definición de variables
+
+/*---Paleta de colores---*/
+
+$primaryColor: #3F51B5;
+$primaryBackground: #E8EAF6;
+$backgroundFooter1: #C5CAE9;
+$altBackground: #FFFFFF;
+$secondaryColor: #2196F3;
+$accentColor: #C6FF00;
+$accentBackground: #424242;
+$noticeColor: red;
+
+/*---Fuentes---*/
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Ubuntu',sans-serif;
+$footerFont: 'Libre Barcode 39 Extended Text', cursive;
+
+// Estilos para menú de navegación en dif. secciones/páginas del sitio
+
+#logoHeader {
+    width: 140px;
+    height: 150px;
+}
+
+li {
+    a {
+        text-decoration: none;
+        padding: 5px;
+    }
+}
+
+ul {
+    li {
+        a {
+            width: 100px;
+            height: 55px;
+            border-radius: 5px 5px 5px 5px;
+            border: solid 1px $primaryColor;
+            color: $primaryColor;
+            padding: 3px;
+            text-decoration: none;
+        }
+        a:hover {
+            background: $primaryColor;
+            color: $altBackground;
+        }
+    }
+}
+
+.formatoMenuNav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menuEnBloques {
+    padding: 35px 0px 50px 0px;
+
+    &__formato {
+        width: 200px;
+        height: 80px;
+        padding: 5px;
+        margin: 25px;
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: bold;
+        color: $primaryColor;
+        border: solid 1px $primaryColor;
+        border-radius: 5px 5px 5px 5px;
+    &:hover {
+        background: $primaryColor;
+        color: $altBackground;
+    }
+    }
+}
+
+section {
+    a {
+        text-decoration: none;
+    }
+}

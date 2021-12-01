@@ -1,0 +1,114 @@
+// Definición de variables
+
+/*---Paleta de colores---*/
+
+$primaryColor: #3F51B5;
+$primaryBackground: #E8EAF6;
+$backgroundFooter1: #C5CAE9;
+$altBackground: #FFFFFF;
+$secondaryColor: #2196F3;
+$accentColor: #C6FF00;
+$accentBackground: #424242;
+$noticeColor: red;
+
+/*---Fuentes---*/
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Ubuntu',sans-serif;
+$footerFont: 'Libre Barcode 39 Extended Text', cursive;
+
+// Estilos para diferentes secciones/páginas del sitio
+
+.bloqueHome {
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    &__titulo2 {
+        color: $primaryColor;
+        font-family: $secondaryFont;
+        font-size: 22px;
+        padding-left: 0px;
+    }
+
+    &__img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+.bloqueAP { 
+    /*Ordena el inicio de páginas ≠ incio*/
+    margin-top: 25px;
+
+    &__titulo1 {
+        /*estilo de h1 páginas ≠ incio*/
+        color: $secondaryColor;
+        font-family: $secondaryFont;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    &__titulo2 {
+        color: $accentColor;
+        background-color: $accentBackground;
+        height: 55px;
+        font-size: 18px;
+        padding-top: 4px;
+        padding-left: 5px;
+    }
+
+    &__titulo3 {
+        color: $accentColor;
+        background-color: $accentBackground;
+        height: 48px;
+        font-size: 18px;
+        padding-top: 12px;
+        padding-left: 5px;
+    }
+
+    &__titulo4 {
+        /*estilo de h2 páginas ≠ incio*/
+        color: $primaryColor;
+        font-family: $secondaryFont;
+        font-size: 18px;
+        padding-left: 0px;
+    }
+}
+
+.bloquesInfoLiga {
+    /*border: dashed #FF80AB 1px;*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+
+    &__iframe {
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: auto;
+        /*Diseño temporal hasta poder editar colores de un Iframe*/
+        background-image: linear-gradient(white,lightgrey);
+    }
+}
+
+.sitioCons__img {
+    width: 400px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.sitioCons__texto {
+    color: $noticeColor;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: solid $noticeColor 1px;
+    padding-left: 0px;
+}

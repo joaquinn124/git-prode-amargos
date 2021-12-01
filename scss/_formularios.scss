@@ -1,0 +1,57 @@
+// Definición de variables
+
+/*---Paleta de colores---*/
+
+$primaryColor: #3F51B5;
+$primaryBackground: #E8EAF6;
+$backgroundFooter1: #C5CAE9;
+$altBackground: #FFFFFF;
+$secondaryColor: #2196F3;
+$accentColor: #C6FF00;
+$accentBackground: #424242;
+$noticeColor: red;
+
+/*---Fuentes---*/
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Ubuntu',sans-serif;
+$footerFont: 'Libre Barcode 39 Extended Text', cursive;
+
+// Estilos formularios de contacto
+
+#legendProp {
+    font-size: 15px;
+}
+
+input {
+    width: 50%;
+    margin: 5px;
+}
+
+label {
+    padding: 5px 5px;
+}
+
+select {
+    width: 50%;
+    margin: 5px;
+}
+
+textarea {
+    width: 50%;
+    margin: 5px;
+}
+
+.suscripcionText {
+    color: $accentColor;
+    text-align: left;
+    width: 50%;
+}
+
+.formContacto {
+    background-color: $accentBackground;
+    color: $accentColor;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}

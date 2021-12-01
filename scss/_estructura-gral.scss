@@ -1,0 +1,85 @@
+// Definición de variables
+
+/*---Paleta de colores---*/
+
+$primaryColor: #3F51B5;
+$primaryBackground: #E8EAF6;
+$backgroundFooter1: #C5CAE9;
+$altBackground: #FFFFFF;
+$secondaryColor: #2196F3;
+$accentColor: #C6FF00;
+$accentBackground: #424242;
+$noticeColor: red;
+
+/*---Fuentes---*/
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Ubuntu',sans-serif;
+$footerFont: 'Libre Barcode 39 Extended Text', cursive;
+
+// Estilos para estructura general del sitio
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bodyProp {
+    background-color:$primaryBackground;
+    font-family: $primaryFont;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100vh;
+}
+
+.indexHeader{
+    padding: 10px 0px;
+    background-color: $primaryBackground;
+    height: 150px;
+    text-align: center;
+}
+
+.altPagesHeader{
+    padding: 20px 0px;
+    background-color: $primaryBackground;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+nav {
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main {
+    padding-top: 5px;
+}
+
+footer {
+    height: 230px;
+    align-items: center;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.footer__texto {
+    font-family: $footerFont;
+    font-size: 35px;
+    text-align: center;
+    color: $primaryColor;    
+    padding-top: 25px;
+}
+
+.footer__fondo {
+    background-image: radial-gradient(farthest-side, $backgroundFooter1, $primaryBackground);
+}
+
+#footer__logo {
+    width: 58px;
+    height: 65px;
+}
