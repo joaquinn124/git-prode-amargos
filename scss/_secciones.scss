@@ -32,6 +32,7 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
         font-family: $secondaryFont;
         font-size: 22px;
         padding-left: 0px;
+        padding-top: 10px;
     }
 
     &__img {
@@ -80,8 +81,55 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
     }
 }
 
+.bloqueCollapse { 
+    /*Estilos para secciones con collpase*/
+    &__fondo {
+        background-color: $accentBackground;
+    }
+
+    &__titulo2 {
+        color: $accentColor;
+        height: 55px;
+        font-size: 22px;
+        padding-top: 4px;
+        padding-left: 5px;
+    }
+
+    &__textoCollapse {
+        color: $accentColor;
+        font-size: 15px;
+        padding-left: 0px;
+        text-align: left;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+
+.bloqueCollapse__fondo {
+    ul {
+        li {
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: left;
+            list-style-type: none;
+        }
+    }
+}
+
+.bloqueCollapse__fondo {
+    ol {
+        li {
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: left;
+            list-style-type:georgian;
+        }
+    }
+}
+
 .bloquesInfoLiga {
-    /*border: dashed #FF80AB 1px;*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -93,7 +141,7 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
         display: flex;
         flex-flow: column nowrap;
         overflow: auto;
-        /*Diseño temporal hasta poder editar colores de un Iframe*/
+        /*Diseño temporal hasta poder editar este tipo de Iframe con JS*/
         background-image: linear-gradient(white,lightgrey);
     }
 }

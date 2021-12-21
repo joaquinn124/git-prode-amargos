@@ -31,7 +31,7 @@
 
 <body id="bodyProp">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <nav class="navbar navbar-expand-xl navbar-light bg-none">
             <div class="container-fluid">
                 <a class="nav-link active" href="../Index.html"><img src="../img/2021_logo_png.png" id="logoHeader" alt="logo prode amargos"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
                           <a href="../pages/nuevos-participantes.html">Quiero Participar!</a>
                         </li>
                         <li class="nav-item">
-                          <a href="../pages/Contacto.html">Contactanos</a>
+                          <a href="../pages/Contacto.html">Contacto</a>
                         </li>
                     </ul>
                     </div>
@@ -70,6 +70,20 @@
             <p class="sitioCons__texto">Página en construcción</p>
         </div>
     </section>
+    <section class="d-flex justify-content-center flex-wrap">
+      <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="background-color: #3F51B5;">
+            +Info sobre nuevos participantes
+          </button>
+      </p>
+        <div style="min-height: 110px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body d-flex flex-wrap" style="width: 270px;">
+              <p class="textoTamañoMedio">Gracias por tu interés en sumarte a Prode Amargos!. Momentáneamente la inscripción de nuevos participantes se encuentra inhabilitada. Si quieres, puedes dejarnos tu e-mail en la sección <span class="negrita"><a href="../pages/contacto.html">Contacto</span></a> y te avisaremos cuando se reanuden las inscripciones.</p>
+            </div>
+          </div>
+        </div>
+</section>
 </main>
 
 <footer>
@@ -80,27 +94,71 @@
     <div class="d-flex align-items-end flex-column flex-nowrap pe-3 pb-2">
       <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Reglamento</a>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Reglamento del prode</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+        <div class="offcanvas-header bloqueCollapse__fondo">
+          <p class="bloqueCollapse__titulo2" id="offcanvasRightLabel">Reglamento Prode Amargos</p>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
           </button>
         </div>
-        <div class="offcanvas-body">
-          Texto con el reglamento del prode
+        <div class="offcanvas-body bloqueCollapse__fondo">
+          <ul class="bloqueCollapse__textoCollapse">
+            <li>
+              Torneo de 25 fechas todos contra todos a una sola rueda. Por lo tanto serán 25 fechas de prode con pronóstico simple: Local - Empate - Visitante
+            </li>
+            <li>
+              Los puntajes de la fecha, estarán disponibles el día posterior al finalizar la fecha. No habrá parciales hasta nuevo aviso
+            </li>
+            <li>
+              En cada fecha habrá ganador/es
+            </li>
+            <li>
+              Habrá disponible una cuenta corriente al finalizar cada fecha, donde cada jugador sabrá su saldo positivo/negativo
+            </li>
+            <li>
+              Los saldos se rinden al final del torneo. El/los segundo/s de la tabla general se lleva/n $700 y el/los líderes se llevan el resto del pozo acumulado
+            </li>
+            <li>
+              Cada jugador apostará $100 POR FECHA, de los cuales: $20 se destinarán al pozo acumulado de tabla general y $80 se destinarán al premio de la fecha
+            </li>
+          </ul>
         </div>
       </div>
       <a class="linksFooter" href="#"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2" >FAQ</a>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">FAQ</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-          </button>
-        </div>
-        <div class="offcanvas-body">
-          Texto preguntas y respuestas más comunes
-        </div>
-      </div>
-    </div> 
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bloqueCollapse__fondo">
+              <p class="bloqueCollapse__titulo2" id="offcanvasRightLabel">FAQ</p>
+              <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body bloqueCollapse__fondo">
+              <ol class="bloqueCollapse__textoCollapse">
+                <li>
+                  Q: Hasta cuándo es posible enviar mis pronósticos?<br>
+                  A: Se aceptan pronósticos hasta una hora antes del inicio del primer partido de cada fecha - SIN EXCEPCIÓN                  
+                </li>
+                <li>
+                  Q: Puedo completar mis pronósticos de cada día de partido por separado?<br>
+                  A: Sólo es posible completar los pronósticos de cada fecha una única vez. Por lo tanto se tendrán que enviar los pronósticos de todos los partidos de la fecha en juego de una sola vez
+                </li>
+                <li>
+                  Q: Que pasa con el puntaje de partidos que se suspenden?<br>
+                  A: Partidos suspendidos o postergados, los puntos se cuentan para la general cuando se jueguen. La fecha se dará por concluída con los partidos que se hayan terminado cuando se haya jugado el último partido de la fecha
+                </li>
+                <li>
+                  Q: Es posible adelantar pagos en caso de tener saldo negativo en mi balance?<br>
+                  A: Cada jugador puede ir adelantando saldos negativos mediante transferencia bancaria, para ello debe contactar a soporte en la sección Contacto
+                </li>
+                <li>
+                  Q: Es posible recibir pagos adelantados en caso de tener un balance positivo en mi cuenta?<br>
+                  A: Los saldos positivos sólo serán rendidos al finalizar el torneo
+                </li>
+                <li>
+                  Q: En caso de tener más dudas con quién puedo consultarlas?<br>
+                  A: En la sección Contacto de nuestro sitio web podrás contactar a soporte por cualquier duda, consulta, sugerencia o posible falla de nuestra web
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div> 
   </section>
   <section class="footer__fondo">
     <p class="footer__texto">prode amargos</p>

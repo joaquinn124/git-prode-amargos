@@ -19,9 +19,11 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
 
 // Estilos para responsive con mobile first aplicado
 
-/*---Tablet Grid---*/
+/*******************/
+/*---MOBILE GRID---*/
+/*******************/
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 599px) {
     ul {
         li {
             a {
@@ -35,11 +37,346 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
             }
         }
     }
+    
+    .bloqueHome {
+        padding: 10px 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo2 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 22px;
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 150px;
+        }
+
+        &__articulo {
+            margin-left: 20px;
+        }
+    }
+
+    .bloqueAP {
+        margin-top: 25px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo1 {
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        &__titulo2 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 55px;
+            font-size: 18px;
+            padding-top: 4px;
+            padding-left: 5px;
+        }
+
+        &__titulo3 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 48px;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-left: 5px;
+        }
+
+        &__titulo4 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 18px;
+            padding-left: 0px;
+        }
+    }
+        
+    .textoTamañoMedio{
+        font-size: 17px;
+    }
+
+    .sitioCons__img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .sitioCons__texto {
+        color: $noticeColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+        border: solid $noticeColor 1px;
+        padding-left: 0px;
+    }
+
+    .bloquesInfoLiga {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: 10px;
+    }
 }
 
-/*---Desktop Grid---*/
+/*******************/
+/*---TABLET GRID---*/
+/*******************/
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 768px) {
+    ul {
+        li {
+            a {
+                width: 100px;
+                height: 55px;
+                border-radius: 5px 5px 5px 5px;
+                border: solid 1px $primaryColor;
+                color: $primaryColor;
+                padding: 3px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bloqueHome {
+        padding: 10px 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo2 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 22px;
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 150px;
+        }
+
+        &__articulo {
+            margin-left: 20px;
+        }
+    }
+
+    .bloqueAP {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo1 {
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        &__titulo2 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 55px;
+            font-size: 18px;
+            padding-top: 4px;
+            padding-left: 5px;
+        }
+
+        &__titulo3 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 48px;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-left: 5px;
+        }
+
+        &__titulo4 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 18px;
+            padding-left: 0px;
+        }
+    }
+        
+    .textoTamañoMedio{
+        font-size: 17px;
+    }
+
+    .sitioCons__img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .sitioCons__texto {
+        color: $noticeColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+        border: solid $noticeColor 1px;
+        padding-left: 0px;
+    }
+
+    .bloquesInfoLiga {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .ajustarVideo {
+        width: 425px;
+        height: 375px;
+    }
+}
+
+/**********************/
+/*---TABLET GRID_v2---*/
+/**********************/
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    ul {
+        li {
+            a {
+                width: 100px;
+                height: 55px;
+                border-radius: 5px 5px 5px 5px;
+                border: solid 1px $primaryColor;
+                color: $primaryColor;
+                padding: 3px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bloqueHome {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo2 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 22px;
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+
+        &__img {
+            width: 500px;
+            height: 310px;
+        }
+
+        &__articulo {
+            margin-left: 20px;
+        }
+    }
+
+    .bloqueAP {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &__titulo1 {
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            font-size: 35px;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        &__titulo2 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 50px;
+            font-size: 25px;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+
+        &__titulo3 {
+            color: $accentColor;
+            background-color: $accentBackground;
+            height: 50px;
+            font-size: 25px;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+
+        &__titulo4 {
+            color: $primaryColor;
+            font-family: $secondaryFont;
+            font-size: 27px;
+            padding-left: 0px;
+        }
+    }
+        
+    .textoTamañoMedio{
+        font-size: 17px;
+    }
+
+    .sitioCons__img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .sitioCons__texto {
+        color: $noticeColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+        border: solid $noticeColor 1px;
+        padding-left: 0px;
+    }
+
+    .bloquesInfoLiga {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .ajustarVideo {
+        width: 425px;
+        height: 375px;
+    }
+
+}
+
+/********************/
+/*---DESKTOP GRID---*/
+/********************/
+
+@media (min-width: 1024px) and (max-width: 1219px) {
     ul {
         li {
             a {
@@ -69,8 +406,8 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
         }
 
         &__img {
-            width: 375px;
-            height: 175px;
+            width: 675px;
+            height: 400px;
         }
 
         &__articulo {
@@ -152,7 +489,11 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
 
 }
 
-@media (min-width: 1201px) {
+/***********************/
+/*---DESKTOP GRID_v2---*/
+/***********************/
+
+@media (min-width: 1220px) {
     ul {
         li {
             a {
@@ -161,13 +502,13 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
                 border-radius: 5px 5px 5px 5px;
                 border: solid 1px $primaryColor;
                 color: $primaryColor;
-                margin: 20px;
+                margin: 10px;
                 padding: 3px;
                 text-decoration: none;
             }
         }
     }
-
+    
     .bloqueHome {
         display: flex;
         flex-flow: row nowrap;
@@ -178,7 +519,7 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
         &__titulo2 {
             color: $primaryColor;
             font-family: $secondaryFont;
-            font-size: 32px;
+            font-size: 30px;
             padding-left: 0px;
         }
 
@@ -191,7 +532,7 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
             margin-left: 20px;
         }
     }
-    
+
     .bloqueAP {
         display: flex;
         flex-flow: row nowrap;
@@ -231,10 +572,10 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
             font-size: 27px;
             padding-left: 0px;
         }
-    }  
-    
+    }
+        
     .textoTamañoMedio{
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .sitioCons__img {
@@ -259,10 +600,9 @@ $footerFont: 'Libre Barcode 39 Extended Text', cursive;
         align-items: center;
     }
 
-    div {
-        iframe {
-            width: 650px;
-            height: 500px;
-        }
+    .ajustarVideo {
+        width: 425px;
+        height: 375px;
     }
+
 }
