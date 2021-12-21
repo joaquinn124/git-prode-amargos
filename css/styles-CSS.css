@@ -128,7 +128,8 @@ section a {
     color: #3F51B5;
     font-family: "Ubuntu", sans-serif;
     font-size: 22px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    padding-top: 10px; }
   .bloqueHome__img {
     width: 300px;
     height: 150px; }
@@ -164,8 +165,39 @@ section a {
     font-size: 18px;
     padding-left: 0px; }
 
+.bloqueCollapse {
+  /*Estilos para secciones con collpase*/ }
+  .bloqueCollapse__fondo {
+    background-color: #424242; }
+  .bloqueCollapse__titulo2 {
+    color: #C6FF00;
+    height: 55px;
+    font-size: 22px;
+    padding-top: 4px;
+    padding-left: 5px; }
+  .bloqueCollapse__textoCollapse {
+    color: #C6FF00;
+    font-size: 15px;
+    padding-left: 0px;
+    text-align: left;
+    line-height: 1.5;
+    text-align: justify; }
+
+.bloqueCollapse__fondo ul li {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  list-style-type: none; }
+
+.bloqueCollapse__fondo ol li {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  list-style-type: georgian; }
+
 .bloquesInfoLiga {
-  /*border: dashed #FF80AB 1px;*/
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -176,7 +208,7 @@ section a {
     display: flex;
     flex-flow: column nowrap;
     overflow: auto;
-    /*Diseño temporal hasta poder editar colores de un Iframe*/
+    /*Diseño temporal hasta poder editar este tipo de Iframe con JS*/
     background-image: linear-gradient(white, lightgrey); }
 
 .sitioCons__img {
@@ -232,8 +264,10 @@ textarea {
 /*********************/
 /*---Paleta de colores---*/
 /*---Fuentes---*/
-/*---Tablet Grid---*/
-@media (min-width: 577px) and (max-width: 768px) {
+/*******************/
+/*---MOBILE GRID---*/
+/*******************/
+@media (max-width: 599px) {
   ul li a {
     width: 100px;
     height: 55px;
@@ -241,10 +275,248 @@ textarea {
     border: solid 1px #3F51B5;
     color: #3F51B5;
     padding: 3px;
-    text-decoration: none; } }
+    text-decoration: none; }
+  .bloqueHome {
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueHome__titulo2 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      padding-left: 0px;
+      padding-top: 10px; }
+    .bloqueHome__img {
+      width: 300px;
+      height: 150px; }
+    .bloqueHome__articulo {
+      margin-left: 20px; }
+  .bloqueAP {
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueAP__titulo1 {
+      color: #2196F3;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 25px;
+      text-align: center;
+      padding: 10px 0px; }
+    .bloqueAP__titulo2 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 55px;
+      font-size: 18px;
+      padding-top: 4px;
+      padding-left: 5px; }
+    .bloqueAP__titulo3 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 48px;
+      font-size: 18px;
+      padding-top: 12px;
+      padding-left: 5px; }
+    .bloqueAP__titulo4 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px;
+      padding-left: 0px; }
+  .textoTamañoMedio {
+    font-size: 17px; }
+  .sitioCons__img {
+    width: 400px;
+    height: 200px; }
+  .sitioCons__texto {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: solid red 1px;
+    padding-left: 0px; }
+  .bloquesInfoLiga {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px; } }
 
-/*---Desktop Grid---*/
-@media (min-width: 769px) and (max-width: 1200px) {
+/*******************/
+/*---TABLET GRID---*/
+/*******************/
+@media (min-width: 600px) and (max-width: 768px) {
+  ul li a {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 1px #3F51B5;
+    color: #3F51B5;
+    padding: 3px;
+    text-decoration: none; }
+  .bloqueHome {
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueHome__titulo2 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      padding-left: 0px;
+      padding-top: 10px; }
+    .bloqueHome__img {
+      width: 300px;
+      height: 150px; }
+    .bloqueHome__articulo {
+      margin-left: 20px; }
+  .bloqueAP {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueAP__titulo1 {
+      color: #2196F3;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 25px;
+      text-align: center;
+      padding: 10px 0px; }
+    .bloqueAP__titulo2 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 55px;
+      font-size: 18px;
+      padding-top: 4px;
+      padding-left: 5px; }
+    .bloqueAP__titulo3 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 48px;
+      font-size: 18px;
+      padding-top: 12px;
+      padding-left: 5px; }
+    .bloqueAP__titulo4 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px;
+      padding-left: 0px; }
+  .textoTamañoMedio {
+    font-size: 17px; }
+  .sitioCons__img {
+    width: 400px;
+    height: 200px; }
+  .sitioCons__texto {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: solid red 1px;
+    padding-left: 0px; }
+  .bloquesInfoLiga {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px; }
+  .ajustarVideo {
+    width: 425px;
+    height: 375px; } }
+
+/**********************/
+/*---TABLET GRID_v2---*/
+/**********************/
+@media (min-width: 769px) and (max-width: 1023px) {
+  ul li a {
+    width: 100px;
+    height: 55px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 1px #3F51B5;
+    color: #3F51B5;
+    padding: 3px;
+    text-decoration: none; }
+  .bloqueHome {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueHome__titulo2 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      padding-left: 0px;
+      padding-top: 10px; }
+    .bloqueHome__img {
+      width: 500px;
+      height: 310px; }
+    .bloqueHome__articulo {
+      margin-left: 20px; }
+  .bloqueAP {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .bloqueAP__titulo1 {
+      color: #2196F3;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 35px;
+      text-align: center;
+      padding: 10px 0px; }
+    .bloqueAP__titulo2 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo3 {
+      color: #C6FF00;
+      background-color: #424242;
+      height: 50px;
+      font-size: 25px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    .bloqueAP__titulo4 {
+      color: #3F51B5;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 27px;
+      padding-left: 0px; }
+  .textoTamañoMedio {
+    font-size: 17px; }
+  .sitioCons__img {
+    width: 400px;
+    height: 200px; }
+  .sitioCons__texto {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: solid red 1px;
+    padding-left: 0px; }
+  .bloquesInfoLiga {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px; }
+  .ajustarVideo {
+    width: 425px;
+    height: 375px; } }
+
+/********************/
+/*---DESKTOP GRID---*/
+/********************/
+@media (min-width: 1024px) and (max-width: 1219px) {
   ul li a {
     width: 100px;
     height: 55px;
@@ -265,8 +537,8 @@ textarea {
       font-size: 22px;
       padding-left: 0px; }
     .bloqueHome__img {
-      width: 375px;
-      height: 175px; }
+      width: 675px;
+      height: 400px; }
     .bloqueHome__articulo {
       margin-left: 20px; }
   .bloqueAP {
@@ -322,14 +594,17 @@ textarea {
     width: 425px;
     height: 375px; } }
 
-@media (min-width: 1201px) {
+/***********************/
+/*---DESKTOP GRID_v2---*/
+/***********************/
+@media (min-width: 1220px) {
   ul li a {
     width: 100px;
     height: 55px;
     border-radius: 5px 5px 5px 5px;
     border: solid 1px #3F51B5;
     color: #3F51B5;
-    margin: 20px;
+    margin: 10px;
     padding: 3px;
     text-decoration: none; }
   .bloqueHome {
@@ -341,7 +616,7 @@ textarea {
     .bloqueHome__titulo2 {
       color: #3F51B5;
       font-family: "Ubuntu", sans-serif;
-      font-size: 32px;
+      font-size: 30px;
       padding-left: 0px; }
     .bloqueHome__img {
       width: 675px;
@@ -380,7 +655,7 @@ textarea {
       font-size: 27px;
       padding-left: 0px; }
   .textoTamañoMedio {
-    font-size: 22px; }
+    font-size: 25px; }
   .sitioCons__img {
     width: 650px;
     height: 400px; }
@@ -397,12 +672,10 @@ textarea {
     justify-content: space-around;
     align-content: center;
     align-items: center; }
-  div iframe {
-    width: 650px;
-    height: 500px; } }
+  .ajustarVideo {
+    width: 425px;
+    height: 375px; } }
 
-/*---Paleta de colores---*/
-/*---Fuentes---*/
 /*********************/
 /*   ESTILOS TEXTO   */
 /*********************/
